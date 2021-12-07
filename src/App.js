@@ -4,6 +4,7 @@ import { Component } from 'react';
 import HomePage from './components/HomePage';
 import NavBar from './components/NavBar';
 import About from './components/About';
+import Videos from './components/Videos';
 import { Route, Switch } from 'react-router-dom';
 
 
@@ -27,9 +28,9 @@ class App extends Component {
             <About />
           </Route>
 
-          {/* <Route path="/videos/">
+          <Route path="/videos/">
             <Videos />
-          </Route> */}
+          </Route>
 
         </Switch>
       </div>
