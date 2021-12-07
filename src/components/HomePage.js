@@ -1,6 +1,7 @@
 import React from 'react';
 import { Component } from 'react';
 
+
 class HomePage extends Component {
   constructor(){
     super()
@@ -8,10 +9,13 @@ class HomePage extends Component {
   render(){
     return (
       <div className="HomePage">
-        HomePage
-        <Link exact to="/">
-
-        </Link>
+        homepage
+        <div>
+            <form>
+                <input type="text" placeholder="Search"></input>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
       </div>
     )
   }
