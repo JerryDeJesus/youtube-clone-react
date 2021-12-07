@@ -3,9 +3,9 @@ import { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class NavBar extends Component {
-  constructor(){
-    super()
-  }
+  // constructor(){
+  //   super()
+  // }
   render(){
     return (
       <div className="NavBar">

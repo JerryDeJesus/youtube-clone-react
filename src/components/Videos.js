@@ -3,9 +3,9 @@ import { Component } from 'react';
 import { Link, Route } from 'react-router-dom';
 
 class Videos extends Component {
-  constructor(){
-    super()
-  }
+//   constructor(){
+//     super()
+//   }
   render(){
     return (
       <div className="Videos">

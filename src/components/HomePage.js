@@ -46,7 +46,7 @@ class HomePage extends Component {
  
   const videoItems = this.state.searchResults.map((eachResult)=>{
        return (
-          <div>{eachResult.snippet.title}</div>
+          <div key={eachResult.snippet.description}>{eachResult.snippet.title}<img src={eachResult.snippet.thumbnails.default.url} placeholder="kachow"/></div>
         )
     })
 
