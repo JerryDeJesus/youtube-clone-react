@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 import About from './components/About';
 import { Route, Switch } from 'react-router-dom';
 
+
 class App extends Component {
   constructor(){
     super()
