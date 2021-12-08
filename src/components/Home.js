@@ -42,7 +42,7 @@ class HomePage extends Component {
     });
 
     return (
-      <div className="HomePage">
+      <div className="Home">
         <div>
           <form onSubmit={this.handleSubmit}>
             {videoItems}
