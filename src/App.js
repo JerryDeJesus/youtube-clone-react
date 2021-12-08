@@ -5,11 +5,12 @@ import HomePage from "./components/HomePage";
 import NavBar from "./components/NavBar";
 import About from "./components/About";
 import { Route, Switch } from "react-router-dom";
+import Videos from "./components/Videos";
 
 class App extends Component {
-  constructor() {
-    super();
-  }
+  // constructor() {
+  //   super();
+  // }
   render() {
     return (
       <div className="App">
@@ -25,7 +26,7 @@ class App extends Component {
             <About />
           </Route>
 
-          <Route path="/videos/">
+          <Route path="/videos">
             <Videos />
           </Route>
 
