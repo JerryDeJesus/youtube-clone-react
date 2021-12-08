@@ -25,9 +25,10 @@ class App extends Component {
             <About />
           </Route>
 
-          {/* <Route path="/videos/">
+          <Route path="/videos/">
             <Videos />
-          </Route> */}
+          </Route>
+
         </Switch>
       </div>
     );
