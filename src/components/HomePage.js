@@ -50,10 +50,8 @@ class HomePage extends Component {
         </div>
       );
     });
-
     return (
-      <div className="HomePage">
-        homepage
+      <div className="Home">
         <div>
           <form onSubmit={this.handleSubmit}>
             {videoItems}
@@ -62,8 +60,10 @@ class HomePage extends Component {
               placeholder="Search"
               value={this.state.searchValue}
               onInput={this.handleInput}
-            />
-            <button type="submit">Submit</button>
+              />
+            <button type="submit" id="search">
+              Search
+            </button>
           </form>
         </div>
       </div>
