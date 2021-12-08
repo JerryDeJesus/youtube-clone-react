@@ -46,10 +46,11 @@ class Home extends Component {
         <div key={eachResult.id.videoId}>
           <Link to={ "videos/" + eachResult.id.videoId}>
             {eachResult.snippet.title}
-          </Link>
-          <div>
+            <div>
               <img src={eachResult.snippet.thumbnails.default.url} alt="thumbnail" />
-          </div>
+            </div>
+          </Link>
+          
           {eachResult.id.videoId}
         </div>
       );
