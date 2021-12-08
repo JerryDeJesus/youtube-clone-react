@@ -3,13 +3,14 @@ import { Component } from "react";
 import { Link } from 'react-router-dom';
 require("dotenv").config();
 
-class HomePage extends Component {
+class Home extends Component {
   constructor() {
     super();
     this.state = {
-      searchValue: "",
-      searchResults: [],
-    };
+      searchResults:[],
+      searchValue:"",
+      videoId:""
+    }
   }
 
   handleInput = (event) => {
@@ -24,7 +25,6 @@ class HomePage extends Component {
       searchValue: "",
     });
 
-    // https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=YOURKEYWORD&type=video&key=${process.env.REACT_APP_API_KEY}
     fetch(
       `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${this.state.searchValue}&type=video&key=${process.env.REACT_APP_API_KEY}`
     )
@@ -32,21 +32,25 @@ class HomePage extends Component {
         return res.json();
       })
       .then((data) => {
-        this.setState({ searchResults: data.items });
+        this.setState({
+          searchResults: data.items,
+          data: data
+         });
+         console.log(data);
       });
-    console.log(this.state.searchResults);
   };
 
   render() {
     const videoItems = this.state.searchResults.map((eachResult) => {
       return (
-        <div key={eachResult.snippet.description}>
-          <Link to="/videos">
+        <div key={eachResult.id.videoId}>
+          <Link to={ "videos/" + eachResult.id.videoId}>
             {eachResult.snippet.title}
           </Link>
           <div>
               <img src={eachResult.snippet.thumbnails.default.url} alt="thumbnail" />
           </div>
+          {eachResult.id.videoId}
         </div>
       );
     });
@@ -71,4 +75,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+export default Home;

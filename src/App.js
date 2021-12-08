@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 import { Component } from "react";
-import HomePage from "./components/HomePage";
+import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import About from "./components/About";
 import { Route, Switch } from "react-router-dom";
@@ -11,6 +11,7 @@ class App extends Component {
   // constructor() {
   //   super();
   // }
+
   render() {
     return (
       <div className="App">
@@ -19,16 +20,14 @@ class App extends Component {
         </Route>
         <Switch>
           <Route exact path="/">
-            <HomePage />
+            <Home />
           </Route>
 
           <Route path="/about">
             <About />
           </Route>
 
-          <Route path="/videos">
-            <Videos />
-          </Route>
+          <Route path="/videos/:id" component={Videos}/>
 
         </Switch>
       </div>
