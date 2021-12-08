@@ -9,11 +9,9 @@ class NavBar extends Component {
   render() {
     return (
       <div className="NavBar">
-        YouTube
-        <Link exact to="/">
-          Home
-        </Link>
-        <Link to="/about">About</Link>
+        <span id="youtube-header">YouTube</span>
+        <Link exact to="/">Home</Link>
+        <Link to="/about">About</Link>              
       </div>
     );
   }

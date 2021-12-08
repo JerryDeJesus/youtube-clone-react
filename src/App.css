@@ -1,12 +1,38 @@
+body{
+  margin-top: -30px;
+  background-color: lightgray;
+}
+
+.About p{
+  text-align: center;
+}
+
 .NavBar {
   border: 10px red solid;
   background-color: red;
   height: 35px;
-  text-decoration-color: antiquewhite;
+  text-decoration-color: ghostwhite;
   text-align: left;
   margin: 30px 0;
   font-family: Arial, Helvetica, sans-serif;
-  font: white;
+  color: white;
+  display:grid;
+  grid-template-columns: 100px 100px 100px;
+}
+
+.NavBar a{
+  margin-top: 9px;
+  color:white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+}
+
+#youtube-header{
+  width: 100px;
+  font-size: 20px;
+  margin-top: 6px;
+  color:white;
 }
 
 .HomePage {
@@ -25,12 +51,14 @@ button {
   box-shadow: -6px -6px 10px -5px;
   width: 350px;
   text-align: center;
-  background-color: white;
+  background-color: ghostwhite;
+  margin: 0 auto;
 }
 
 #team-container{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  
 }
 
 .card img{
