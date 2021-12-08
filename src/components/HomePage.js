@@ -1,68 +1,74 @@
-import React from 'react';
-import { Component } from 'react';
-require('dotenv').config();
-
+import React from "react";
+import { Component } from "react";
+import { Link } from 'react-router-dom';
+require("dotenv").config();
 
 class HomePage extends Component {
-  constructor(){
-    super()
+  constructor() {
+    super();
     this.state = {
-      searchValue:"",
-      searchResults:[]
-    }
+      searchValue: "",
+      searchResults: [],
+    };
   }
 
-  handleInput=(event)=>{
+  handleInput = (event) => {
     this.setState({
-      searchValue: event.target.value
-    })
-  }
+      searchValue: event.target.value,
+    });
+  };
 
-  handleSubmit=(event)=>{
+  handleSubmit = (event) => {
     event.preventDefault();
     this.setState({
-      searchValue:""
+      searchValue: "",
     });
 
     // https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=YOURKEYWORD&type=video&key=${process.env.REACT_APP_API_KEY}
-    fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${this.state.searchValue}&type=video&key=${process.env.REACT_APP_API_KEY}`)
-    .then((res) => { return res.json()})
-    .then((data) => {
-      
-      
-      this.setState({searchResults: data.items})
-  
-  
-  
-  })
+    fetch(
+      `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${this.state.searchValue}&type=video&key=${process.env.REACT_APP_API_KEY}`
+    )
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        this.setState({ searchResults: data.items });
+      });
     console.log(this.state.searchResults);
+  };
 
-    
-  }
-
-
-
-  render(){
- 
-  const videoItems = this.state.searchResults.map((eachResult)=>{
-       return (
-          <div key={eachResult.snippet.description}>{eachResult.snippet.title}<img src={eachResult.snippet.thumbnails.default.url} placeholder="kachow"/></div>
-        )
-    })
+  render() {
+    const videoItems = this.state.searchResults.map((eachResult) => {
+      return (
+        <div key={eachResult.snippet.description}>
+          <Link to="/videos">
+            {eachResult.snippet.title}
+          </Link>
+          <div>
+              <img src={eachResult.snippet.thumbnails.default.url} alt="thumbnail" />
+          </div>
+        </div>
+      );
+    });
 
     return (
       <div className="HomePage">
         homepage
         <div>
-            <form onSubmit={this.handleSubmit}>
-                {videoItems}
-                <input type="text" placeholder="Search" value={this.state.searchValue} onInput={this.handleInput}></input>
-                <button type="submit">Submit</button>
-            </form>
+          <form onSubmit={this.handleSubmit}>
+            {videoItems}
+            <input
+              type="text"
+              placeholder="Search"
+              value={this.state.searchValue}
+              onInput={this.handleInput}
+            />
+            <button type="submit">Submit</button>
+          </form>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default HomePage
+export default HomePage;
