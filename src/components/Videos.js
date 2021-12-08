@@ -10,7 +10,7 @@ class Videos extends Component {
     const { video, videoTitle } = this.props;
     return (
       <div className="Videos">
-        <h2>{this.props.video.videoTitle}</h2>
+        <h2>{video.videoTitle}</h2>
         <img src={this.props} />
         Videos
       </div>

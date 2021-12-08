@@ -2,7 +2,7 @@ import React from "react";
 import { Component } from "react";
 require("dotenv").config();
 
-class HomePage extends Component {
+class Home extends Component {
   constructor() {
     super();
     this.state = {
@@ -62,4 +62,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+export default HomeS;
