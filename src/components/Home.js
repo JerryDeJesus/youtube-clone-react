@@ -42,7 +42,7 @@ class Home extends Component {
     });
 
     return (
-      <div className="Home">
+      <div className="HomePage">
         <div>
           <form onSubmit={this.handleSubmit}>
             {videoItems}
@@ -62,4 +62,4 @@ class Home extends Component {
   }
 }
 
-export default HomeS;
+export default HomePage;
