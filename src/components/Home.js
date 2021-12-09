@@ -1,8 +1,9 @@
 import React from "react";
 import { Component } from "react";
+import { Link } from 'react-router-dom';
 require("dotenv").config();
 
-class Home extends Component {
+class HomePage extends Component {
   constructor() {
     super();
     this.state = {
@@ -38,9 +39,17 @@ class Home extends Component {
 
   render() {
     const videoItems = this.state.searchResults.map((eachResult) => {
-      return <div>{eachResult.snippet.title}</div>;
+      return (
+        <div key={eachResult.snippet.description}>
+          <Link to="/videos">
+            {eachResult.snippet.title}
+          </Link>
+          <div>
+              <img src={eachResult.snippet.thumbnails.default.url} alt="thumbnail" />
+          </div>
+        </div>
+      );
     });
-
     return (
       <div className="Home">
         <div>
@@ -51,7 +60,7 @@ class Home extends Component {
               placeholder="Search"
               value={this.state.searchValue}
               onInput={this.handleInput}
-            ></input>
+              />
             <button type="submit" id="search">
               Search
             </button>
