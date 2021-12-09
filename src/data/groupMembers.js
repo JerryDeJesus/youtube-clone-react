@@ -1,9 +1,13 @@
 const groupMembers = [
     {
-      name: "Spider-Man (Peter Parker)",
-      description: "Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Taught that with great power comes great responsibility, Spidey has vowed to use his powers to help people.",
-      photo: "http://i.annihil.us/u/prod/marvel/i/mg/3/50/526548a343e4b/portrait_xlarge.jpg",
-      story: "Story: Jerry is now Spider-Man!"
+      name: "Jerry DeJesus",
+      description: `
+        I’m Jerry, a Full Stack Web Developer from New York City. I'm a Pursuit Fellow, taking part in an intensive 12 - month software engineering
+        fellowship with a 9% acceptance rate. As a diligent, Full-Stack Web Developer, I am seeking to use my expertise to facilitate positive and 
+        productive change in tech, as well as spur my own growth. Web development gives me the opportunity to constantly challenge myself and
+        mold my own skillset..............................................
+        Technical Skills: React · JavaScript · HTML · CSS · Git`,
+      photo: "https://avatars.githubusercontent.com/u/86433443?v=4",
     },
     {
       name: "Christina Loiacono",
