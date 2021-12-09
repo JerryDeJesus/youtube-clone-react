@@ -32,13 +32,23 @@ class Home extends Component {
         return res.json();
       })
       .then((data) => {
+        const formattedData = data.items.map((item)=>{
+          if(item.snippet.title.includes("&#39;")){
+            item.snippet.title = item.snippet.title.replaceAll("&#39;","'"); 
+          }
+          if(item.snippet.title.includes("&quot;")){
+            item.snippet.title =  item.snippet.title.replaceAll("&quot;","'");
+          }
+          if(item.snippet.title.includes("&amp;")){
+            item.snippet.title = item.snippet.title.replaceAll("&amp;","'");
+          }
+          return item
+        })
         this.setState({
-          searchResults: data.items,
-          data: data
-         });
-         console.log(data);
-      });
-  };
+          searchResults: formattedData,
+         }); 
+      })
+  }
 
   render() {
     const videoItems = this.state.searchResults.map((eachResult) => {
