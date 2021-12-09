@@ -3,16 +3,18 @@ import { Component } from "react";
 import Card from "./Card";
 
 class About extends Component {
-  render(){
+  render() {
     return (
       <div className="About">
-        <p>
-          Description: React application that lets you search for YouTube videos using the YouTube API, then choose a video from a list to watch.
-        </p>
-        
-        <Card/>
+        <h2>
+          This pseudo YouTube React application allows users to search YouTube for
+          videos using the YouTube API, then users may choose a video from the
+          list of results to watch.
+        </h2>
+
+        <Card />
       </div>
-    )
+    );
   }
 }
 

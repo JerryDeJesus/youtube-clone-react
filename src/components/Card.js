@@ -57,15 +57,29 @@ class Card extends Component {
       <p>bla bla blap</p>
       </div>
 
-      <div className="card">
-      <h2>Sara D'Arce</h2>
-        <div className="card-pic">
-          <img src="https://avatars.githubusercontent.com/u/1423883?v=4" alt="SaraPic"/>
+        <div className="card">
+          <h2>Sara D'Arce</h2>
+          <div className="card-pic">
+            <img
+              src="https://avatars.githubusercontent.com/u/1423883?v=4"
+              alt="SaraPic"
+            />
+          </div>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/saradarce"
+          >
+            Sara's GitHub
+          </a>
+          <p>
+            chocolate tiramisu cheesecake fruitcake fruitcake halvah. Biscuit
+            liquorice gummies gingerbread apple pie. Candy canes bonbon jujubes
+            pastry danish jelly beans macaroon. Sesame snaps pie cake toffee
+            tart cupcake toffee.
+          </p>
         </div>
-      <a target="_blank" rel="noreferrer" href="https://github.com/saradarce">Sara's GitHub</a>
-      <p>Sara is not blah</p>
       </div>
-    </div>
     );
   }
 }
