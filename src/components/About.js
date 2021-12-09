@@ -6,7 +6,15 @@ class About extends Component {
     super();
   }
   render() {
-    return <div className="About">About</div>;
+    return (
+    <div className="About">About</div>
+      <break>
+        <div>
+
+        </div>
+    </break>
+
+    )
   }
 }
 
