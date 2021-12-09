@@ -7,7 +7,7 @@ class About extends Component {
     return (
       <div className="About">
         <h2>
-          This YouTube React application allows users to search YouTube for
+          This pseudo YouTube React application allows users to search YouTube for
           videos using the YouTube API, then users may choose a video from the
           list of results to watch.
         </h2>
