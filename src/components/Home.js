@@ -3,13 +3,14 @@ import { Component } from "react";
 import { Link } from 'react-router-dom';
 require("dotenv").config();
 
-class HomePage extends Component {
+class Home extends Component {
   constructor() {
     super();
     this.state = {
-      searchValue: "",
-      searchResults: [],
-    };
+      searchResults:[],
+      searchValue:"",
+      videoId:""
+    }
   }
 
   handleInput = (event) => {
@@ -24,7 +25,7 @@ class HomePage extends Component {
       searchValue: "",
     });
 
-    // https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=YOURKEYWORD&type=video&key=${process.env.REACT_APP_API_KEY}
+
     fetch(
       `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${this.state.searchValue}&type=video&key=${process.env.REACT_APP_API_KEY}`
     )
@@ -32,39 +33,48 @@ class HomePage extends Component {
         return res.json();
       })
       .then((data) => {
-        this.setState({ searchResults: data.items });
+
+        this.setState({
+          searchResults: data.items,
+          data: data
+         });
+         console.log(data);
       });
-    console.log(this.state.searchResults);
   };
 
   render() {
     const videoItems = this.state.searchResults.map((eachResult) => {
       return (
-        <div key={eachResult.snippet.description}>
-          <Link to="/videos">
-            {eachResult.snippet.title}
-          </Link>
-          <div>
-              <img src={eachResult.snippet.thumbnails.default.url} alt="thumbnail" />
+          <div key={eachResult.id.videoId} className="search-child">           
+            <Link to={ "videos/" + eachResult.id.videoId} className="search-results-link">
+              <div className="search-results-thumbnail-div">
+                <img src={eachResult.snippet.thumbnails.high.url} alt="thumbnail" className="thumbnails" />
+              </div>
+             <b>{eachResult.snippet.title}</b>
+            </Link>
           </div>
-        </div>
       );
     });
+    
     return (
       <div className="Home">
         <div>
           <form onSubmit={this.handleSubmit}>
-            {videoItems}
-            <input
-              type="text"
-              placeholder="Search"
-              value={this.state.searchValue}
-              onInput={this.handleInput}
-              />
-            <button type="submit" id="search">
-              Search
-            </button>
+            <div id="search-bar">
+              <input
+                type="text"
+                placeholder="Search"
+                value={this.state.searchValue}
+                onInput={this.handleInput}
+                />
+              <button type="submit" id="search-button">
+                Search
+              </button>
+            </div>
           </form>
+            <div className="search-results-container">
+            {videoItems}
+            </div>
         </div>
       </div>
     );
@@ -72,3 +82,4 @@ class HomePage extends Component {
 }
 
 export default Home;
+

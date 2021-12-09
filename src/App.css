@@ -1,12 +1,38 @@
+body{
+  margin-top: -30px;
+  background-color: lightgray;
+}
+
+.About p{
+  text-align: center;
+}
+
 .NavBar {
   border: 10px red solid;
   background-color: red;
   height: 35px;
-  text-decoration-color: antiquewhite;
+  text-decoration-color: ghostwhite;
   text-align: left;
   margin: 30px 0;
   font-family: Arial, Helvetica, sans-serif;
-  font: white;
+  color: white;
+  display:grid;
+  grid-template-columns: 100px 100px 100px;
+}
+
+.NavBar a{
+  margin-top: 9px;
+  color:white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+}
+
+#youtube-header{
+  width: 100px;
+  font-size: 20px;
+  margin-top: 6px;
+  color:white;
 }
 
 .Home {
@@ -19,4 +45,82 @@
 
 button {
   position: center;
+}
+
+.card{
+  box-shadow: -6px -6px 10px -5px;
+  width: 350px;
+  text-align: center;
+  background-color: ghostwhite;
+  margin: 0 auto;
+}
+
+#team-container{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  
+}
+
+.card img{
+  height: 150px;
+  width: 150px;
+}
+
+#search-bar{
+  text-align: center;
+  height: 50px;
+}
+
+#search-bar input{
+  width: 45%;
+  height: 30px;
+}
+
+#search-button{
+   height: 35px;
+   color: white;
+   background-color: red;
+   border: none;
+   width:150px;
+}
+
+.search-results-link{
+  text-decoration: none;
+  color:black;
+  font-size: 20px;
+}
+
+.search-results-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  width:1200px;
+}
+
+.thumbnails{
+  width: 450px;
+}
+
+.search-child{
+  padding: 60px;
+  text-align: center;
+  width:450px;
+}
+
+.search-child:hover{
+  background-color: lightsteelblue;
+  transition: 0.5s;
+}
+
+.search-results-thumbnail-div{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+b{
+  width:400px;
+}
+
+.Videos{
+  text-align: center;
 }
