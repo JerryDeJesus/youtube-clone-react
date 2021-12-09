@@ -6,9 +6,15 @@ const groupMembers = [
       story: "Story: Jerry is now Spider-Man!"
     },
     {
-      name: "Hulk",
-      description: "Caught in a gamma bomb explosion while trying to save the life of a teenager, Dr. Bruce Banner was transformed into the incredibly powerful creature called the Hulk. An all too often misunderstood hero, the angrier the Hulk gets, the stronger the Hulk gets.",
-      photo: "http://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0/portrait_xlarge.jpg"
+      name: "Christina Loiacono",
+      description: `Hello!
+      I’m Christina, a Full Stack Web Developer from New York City. Currently I am a Pursuit Fellow, taking part in an intensive 12 - month software engineering fellowship with a 9% acceptance rate.
+      I am working towards becoming a Full Stack Web Developer so that I can be a leader in tech, by strengthening my skills and continuing to learn each day.
+      I am looking to transition careers from the fashion industry to full stack web development, where my skills will be more in-demand and have the opportunity to grow. I would like to be part of a team that is innovative and allows me to continue learning and add value to the company.
+      Open to opportunities: Full-time, Apprenticeships, Volunteer Opportunities, Open Source Projects, Internships!
+      Interests
+      Coding, Google-Fu`,
+      photo: "https://avatars.githubusercontent.com/u/65386414?v=4"
     },
     {
       name: "Captain America",
