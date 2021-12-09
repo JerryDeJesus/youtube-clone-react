@@ -7,6 +7,11 @@ body{
   text-align: center;
 }
 
+#description-header {
+  margin: 10px;
+  background-color: ghostwhite;
+}
+
 .NavBar {
   border: 10px red solid;
   background-color: red;
@@ -47,18 +52,37 @@ button {
   position: center;
 }
 
-.card{
+#description-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 80px;
+  padding-right: 80px;
+
+  box-shadow: -6px -6px 10px -5px;
+  width: 800px;
+  text-align: center;
+  background-color: ghostwhite;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.card {
   box-shadow: -6px -6px 10px -5px;
   width: 350px;
   text-align: center;
   background-color: ghostwhite;
   margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 20px;
+  text-align: left;
 }
 
 #team-container{
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  
 }
 
 .card img{
