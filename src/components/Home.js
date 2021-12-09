@@ -43,33 +43,37 @@ class Home extends Component {
   render() {
     const videoItems = this.state.searchResults.map((eachResult) => {
       return (
-        <div key={eachResult.id.videoId}>
-          <Link to={ "videos/" + eachResult.id.videoId}>
-            {eachResult.snippet.title}
-            <div>
-              <img src={eachResult.snippet.thumbnails.default.url} alt="thumbnail" />
-            </div>
-          </Link>
-          
-          {eachResult.id.videoId}
-        </div>
+          <div key={eachResult.id.videoId} className="search-child">
+            
+            <Link to={ "videos/" + eachResult.id.videoId} className="search-results-link">
+              <div className="search-results-thumbnail-div">
+                <img src={eachResult.snippet.thumbnails.high.url} alt="thumbnail" className="thumbnails" />
+              </div>
+             <b>{eachResult.snippet.title}</b>
+            </Link>
+          </div>
       );
     });
+    
     return (
       <div className="Home">
         <div>
           <form onSubmit={this.handleSubmit}>
-            {videoItems}
-            <input
-              type="text"
-              placeholder="Search"
-              value={this.state.searchValue}
-              onInput={this.handleInput}
-              />
-            <button type="submit" id="search">
-              Search
-            </button>
+            <div id="search-bar">
+              <input
+                type="text"
+                placeholder="Search"
+                value={this.state.searchValue}
+                onInput={this.handleInput}
+                />
+              <button type="submit" id="search-button">
+                Search
+              </button>
+            </div>
           </form>
+            <div className="search-results-container">
+            {videoItems}
+            </div>
         </div>
       </div>
     );

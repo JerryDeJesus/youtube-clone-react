@@ -65,46 +65,61 @@ button {
   height: 150px;
   width: 150px;
 }
-/* 
-body {
-  background-color: ghostwhite;
-  font-family: "Permanent Marker", cursive;
-}
-​ #navbar {
+
+#search-bar{
   text-align: center;
-  margin: 30px 0;
-}
-​ #hero-display {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-areas: "hero-con ul";
-  justify-items: center;
-}
-​ #hero-form {
-  text-align: center;
-  margin-bottom: 50px;
-}
-​ #heroesContainer {
-  grid-area: hero-con;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 60px;
+  height: 50px;
 }
 
-​ .description {
-  padding: 0 10px;
+#search-bar input{
+  width: 45%;
+  height: 30px;
 }
-​ #title {
-  font-size: 50px;
-  margin: 40px 0 10px;
+
+#search-button{
+   height: 36px;
+   color: white;
+   background-color: red;
+   border: none;
 }
-​ #hero-ul {
-  grid-area: ul;
+
+.search-results-link{
+  text-decoration: none;
+  color:black;
+  font-size: 20px;
 }
-​ button {
-  font-family: "Permanent Marker", cursive;
+
+.search-results-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  width:1200px;
 }
-​ img {
-  width: 150px;
-  height: 225px;
-} */
+
+.thumbnails{
+  width: 450px;
+}
+
+.search-child{
+  padding: 60px;
+  text-align: center;
+  width:450px;
+}
+
+.search-child:hover{
+  background-color: lightsteelblue;
+  transition: 0.5s;
+}
+
+.search-results-thumbnail-div{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+b{
+  width:400px;
+}
+
+.Videos{
+  text-align: center;
+}
