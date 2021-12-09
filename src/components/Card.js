@@ -67,10 +67,9 @@ class Card extends Component {
             Sara's GitHub
           </a>
           <p>
-            chocolate tiramisu cheesecake fruitcake fruitcake halvah. Biscuit
-            liquorice gummies gingerbread apple pie. Candy canes bonbon jujubes
-            pastry danish jelly beans macaroon. Sesame snaps pie cake toffee
-            tart cupcake toffee.
+          Becoming a full-stack web developer is directly related to my obsession with marrying music and technology, along with the rabbit hole that is my startup-ConcertMagnet. My love affair with music and its industry, however, started at a very young age. I've been blessed enough to work intermittently in music at Electric Lady Studios and with managers who've handled some of the most revered artists in the world. 
+
+Post earning Google's Project Management Certification and acquiring the title of SCRUM Master, my goals are to build things that make the music industry more prosperous, while hand-in-hand, funding causes that create harmony between man, animals, and the environment.
           </p>
         </div>
       </div>
