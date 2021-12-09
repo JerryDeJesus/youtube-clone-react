@@ -77,10 +77,11 @@ button {
 }
 
 #search-button{
-   height: 36px;
+   height: 35px;
    color: white;
    background-color: red;
    border: none;
+   width:150px;
 }
 
 .search-results-link{
