@@ -33,7 +33,7 @@ class Card extends Component {
           <img className="selfie" src={people[1].photo} alt={people[1].name}/>
           <span className="links-container">
             <a className="social-links" target="_blank" rel="noreferrer" href="https://github.com/christina-ml"><img src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png" alt="github"/></a>
-            <a className="social-links" target="_blank" rel="noreferrer" href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIsx2OVghcTGcZcfkc5XuZcvS4vXP_W3gMYg&usqp=CAU" alt="linkedin"/></a>
+            <a className="social-links" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/christina-loiacono/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIsx2OVghcTGcZcfkc5XuZcvS4vXP_W3gMYg&usqp=CAU" alt="linkedin"/></a>
           </span>
         </div>
         <p>{people[1].description}</p>
