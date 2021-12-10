@@ -8,6 +8,7 @@ const groupMembers = [
         mold my own skillset. Technical Skills include React, JavaScript, HTML, CSS, and Git.`,
       photo: "https://avatars.githubusercontent.com/u/86433443?v=4",
       github: "https://github.com/JerryDeJesus",
+      linkedin: "https://www.linkedin.com/in/jerrydejesus/"
     },
     {
       name: "Christina Loiacono",
@@ -19,7 +20,8 @@ const groupMembers = [
       Interests
       Coding, Google-Fu`,
       photo: "https://avatars.githubusercontent.com/u/65386414?v=4",
-      github: "https://github.com/christina-ml"
+      github: "https://github.com/christina-ml",
+      linkedin: "https://www.linkedin.com/in/christina-loiacono/"
     },
     {
       name: "Sara D'Arce",
@@ -30,7 +32,8 @@ const groupMembers = [
        acquiring the title of SCRUM Master, my goals are to build things that make the music industry more prosperous, while hand-in-hand, 
        funding causes that create harmony between man, animals, and the environment.`,
       photo: "https://avatars.githubusercontent.com/u/1423883?v=4",
-      github: "https://github.com/SaraDArce"
+      github: "https://github.com/SaraDArce",
+      linkedin: "https://linkedin.com/in/saradarce/"
     }
 ]
 

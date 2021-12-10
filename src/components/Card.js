@@ -3,14 +3,17 @@ import groupMembers from "../data/groupMembers";
 
 class Card extends Component {
   render() {
-    const BryantM = groupMembers.map((fellow)=>{
+    const fellowCards = groupMembers.map((fellow)=>{
       return (
         <div className="card">
           <h2>{fellow.name}</h2>
           <div className="card-pic">
-            <img src={fellow.photo} alt={fellow.name}/>
+            <img className="selfie" src={fellow.photo} alt={fellow.name}/>
+          <span className="links-container">
+            <a className="social-links" target="_blank" rel="noreferrer" href={fellow.linkedin}><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIsx2OVghcTGcZcfkc5XuZcvS4vXP_W3gMYg&usqp=CAU" alt="linkedin"/></a>
+            <a className="social-links" target="_blank" rel="noreferrer" href={fellow.github}><img src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png" alt="github"/></a>
+          </span>
           </div>
-          <a target="_blank" rel="noreferrer" href={fellow.github}>{fellow.name}'s GitHub</a>
           <p>{fellow.description}</p>
         </div>
       )
@@ -18,7 +21,7 @@ class Card extends Component {
 
     return (
     <div id="team-container">
-      {BryantM}
+      {fellowCards}
     </div>
     );
   }
