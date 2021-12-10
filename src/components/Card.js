@@ -22,7 +22,6 @@ class Card extends Component {
         </div>
         <a target="_blank" rel="noreferrer" href="https://github.com/JerryDeJesus">Jerry's GitHub</a>
         <p>{people[0].description}</p>
-        <p>{people[0].story}</p>
       </div>
 
       <div className="card">
