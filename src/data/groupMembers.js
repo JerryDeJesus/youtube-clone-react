@@ -21,9 +21,14 @@ const groupMembers = [
       photo: "https://avatars.githubusercontent.com/u/65386414?v=4"
     },
     {
-      name: "Captain America",
-      description: "Vowing to serve his country any way he could, young Steve Rogers took the super soldier serum to become America's one-man army. Fighting for the red, white and blue for over 60 years, Captain America is the living, breathing symbol of freedom and liberty.",
-      photo: "http://i.annihil.us/u/prod/marvel/i/mg/3/50/537ba56d31087/portrait_xlarge.jpg"
+      name: "Sara D'Arce",
+      description: `Becoming a full-stack web developer is directly related to my obsession with marrying music and technology,
+       along with the rabbit hole that is my startup-ConcertMagnet. My love affair with music and its industry, however, started 
+       at a very young age. I've been blessed enough to work intermittently in music at Electric Lady Studios and with managers 
+       who've handled some of the most revered artists in the world.  Post earning Google's Project Management Certification and 
+       acquiring the title of SCRUM Master, my goals are to build things that make the music industry more prosperous, while hand-in-hand, 
+       funding causes that create harmony between man, animals, and the environment.`,
+      photo: "https://avatars.githubusercontent.com/u/1423883?v=4"
     }
 ]
 
