@@ -6,7 +6,7 @@ class Videos extends Component {
 
   render() {
     return (
-      <div className="Videos">
+      <div className="videos">
         <YouTube videoId={this.props.match.params.id}/>    
       </div>
     );
