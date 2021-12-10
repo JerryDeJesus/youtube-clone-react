@@ -7,6 +7,7 @@ const groupMembers = [
         productive change in tech, as well as spur my own growth. Web development gives me the opportunity to constantly challenge myself and
         mold my own skillset. Technical Skills include React, JavaScript, HTML, CSS, and Git.`,
       photo: "https://avatars.githubusercontent.com/u/86433443?v=4",
+      github: "https://github.com/JerryDeJesus",
     },
     {
       name: "Christina Loiacono",
@@ -17,7 +18,8 @@ const groupMembers = [
       Open to opportunities: Full-time, Apprenticeships, Volunteer Opportunities, Open Source Projects, Internships!
       Interests
       Coding, Google-Fu`,
-      photo: "https://avatars.githubusercontent.com/u/65386414?v=4"
+      photo: "https://avatars.githubusercontent.com/u/65386414?v=4",
+      github: "https://github.com/christina-ml"
     },
     {
       name: "Sara D'Arce",
@@ -27,7 +29,8 @@ const groupMembers = [
        who've handled some of the most revered artists in the world.  Post earning Google's Project Management Certification and 
        acquiring the title of SCRUM Master, my goals are to build things that make the music industry more prosperous, while hand-in-hand, 
        funding causes that create harmony between man, animals, and the environment.`,
-      photo: "https://avatars.githubusercontent.com/u/1423883?v=4"
+      photo: "https://avatars.githubusercontent.com/u/1423883?v=4",
+      github: "https://github.com/SaraDArce"
     }
 ]
 
