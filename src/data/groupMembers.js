@@ -5,8 +5,7 @@ const groupMembers = [
         I’m Jerry, a Full Stack Web Developer from New York City. I'm a Pursuit Fellow, taking part in an intensive 12 - month software engineering
         fellowship with a 9% acceptance rate. As a diligent, Full-Stack Web Developer, I am seeking to use my expertise to facilitate positive and 
         productive change in tech, as well as spur my own growth. Web development gives me the opportunity to constantly challenge myself and
-        mold my own skillset..............................................
-        Technical Skills: React · JavaScript · HTML · CSS · Git`,
+        mold my own skillset. Technical Skills include React, JavaScript, HTML, CSS, and Git.`,
       photo: "https://avatars.githubusercontent.com/u/86433443?v=4",
     },
     {

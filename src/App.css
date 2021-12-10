@@ -3,10 +3,6 @@ body{
   background-color: lightgray;
 }
 
-.About p{
-  text-align: center;
-}
-
 #description-header {
   margin: 10px;
   background-color: ghostwhite;
@@ -71,7 +67,7 @@ button {
 
 .card {
   box-shadow: -6px -6px 10px -5px;
-  width: 350px;
+  width: 800px;
   text-align: center;
   background-color: ghostwhite;
   margin: 0 auto;
@@ -80,6 +76,8 @@ button {
 
 .card p {
   margin: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
   text-align: left;
 }
 
@@ -88,10 +86,25 @@ button {
   grid-template-rows: repeat(3, 1fr);
 }
 
-.card img{
+.card-pic{
+  height: 150px;
+}
+
+.selfie{
   height: 150px;
   width: 150px;
 }
+
+.social-links img{
+  height: 50px;
+}
+
+.links-container{
+  padding-left: 270px;
+  width: 90px;
+  display: inline-block;
+}
+
 
 #search-bar{
   text-align: center;
@@ -148,6 +161,11 @@ b{
   width:400px;
 }
 
-.Videos{
+.videos{
   text-align: center;
+}
+
+a img{
+  height: 50px;
+  position: relative;
 }
