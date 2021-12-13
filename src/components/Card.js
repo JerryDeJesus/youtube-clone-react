@@ -7,11 +7,11 @@ class Card extends Component {
       return (
         <div className="card">
           <h2>{fellow.name}</h2>
-          <div className="card-pic">
+          <div className="cardPic">
             <img className="selfie" src={fellow.photo} alt={fellow.name}/>
-          <span className="links-container">
-            <a className="social-links" target="_blank" rel="noreferrer" href={fellow.linkedin}><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIsx2OVghcTGcZcfkc5XuZcvS4vXP_W3gMYg&usqp=CAU" alt="linkedin"/></a>
-            <a className="social-links" target="_blank" rel="noreferrer" href={fellow.github}><img src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png" alt="github"/></a>
+          <span className="linksContainer">
+            <a className="socialLinks" target="_blank" rel="noreferrer" href={fellow.linkedin}><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIsx2OVghcTGcZcfkc5XuZcvS4vXP_W3gMYg&usqp=CAU" alt="linkedin"/></a>
+            <a className="socialLinks" target="_blank" rel="noreferrer" href={fellow.github}><img src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png" alt="github"/></a>
           </span>
           </div>
           <p>{fellow.description}</p>
@@ -20,7 +20,7 @@ class Card extends Component {
     })
 
     return (
-    <div id="team-container">
+    <div id="teamContainer">
       {fellowCards}
     </div>
     );

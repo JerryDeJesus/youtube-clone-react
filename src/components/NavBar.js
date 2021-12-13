@@ -8,8 +8,8 @@ class NavBar extends Component {
   // }
   render() {
     return (
-      <div className="NavBar">
-        <span id="youtube-header">YouTube</span>
+      <div className="navBar">
+        <span id="youtubeHeader">YouTube</span>
         <Link exact to="/">Home</Link>
         <Link to="/about">About</Link>              
       </div>
