@@ -37,10 +37,10 @@ class Home extends Component {
             item.snippet.title = item.snippet.title.replaceAll("&#39;","'"); 
           }
           if(item.snippet.title.includes("&quot;")){
-            item.snippet.title =  item.snippet.title.replaceAll("&quot;","'");
+            item.snippet.title =  item.snippet.title.replaceAll("&quot;",'"');
           }
           if(item.snippet.title.includes("&amp;")){
-            item.snippet.title = item.snippet.title.replaceAll("&amp;","'");
+            item.snippet.title = item.snippet.title.replaceAll("&amp;","&");
           }
           return item
         })
